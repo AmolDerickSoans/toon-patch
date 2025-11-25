@@ -1,0 +1,42 @@
+{
+  "name": "@toon-format/toon-patch",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.20.0",
+  "description": "TOON patch utilities using fast-json-patch",
+  "author": "Johann Schopplich <hello@johannschopplich.com>",
+  "license": "MIT",
+  "homepage": "https://toonformat.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toon-format/toon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toon-format/toon/issues"
+  },
+  "keywords": [
+    "toon",
+    "patch",
+    "json-patch",
+    "fast-json-patch"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@toon-format/toon": "^0.7.3",
+    "fast-json-patch": "^3.1.1"
+  }
+}
